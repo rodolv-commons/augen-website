@@ -1,0 +1,558 @@
+/* CSS - Main + shared CSS*/
+
+:root {
+    --single-space: 12px;
+    --font-size-xs: 14px;
+    --font-size-s: 18px;
+    --font-size-m: 22px;
+    --font-size-l: 32px;
+    --font-size-xl: 40px;
+    --color-light-blue: #5db1b8a3;
+    --color-dark-blue: #01416D;
+    --color-white: #e2f1e0;
+}
+
+p {
+    line-height: 1.45;
+}
+
+strong {
+    font-weight: 700;
+}
+
+.header {
+   font-family: 'Martel', serif;
+   position: relative;
+}
+
+.page-wrapper {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.logo-contacts-wrapper {
+    padding-top: calc(2 * var(--single-space));
+    padding-bottom: calc(2 * var(--single-space));
+    background-color: var(--color-light-blue);
+    color: var(--color-dark-blue); 
+}
+
+.logo-wrapper {
+    padding-left: calc(2 * var(--single-space));
+    padding-right: calc(2 * var(--single-space));
+}
+
+.name {
+    font-size: var(--font-size-m);
+    font-weight: 700;
+    padding-top: calc(2 * var(--single-space));
+    padding-bottom: calc(2 * var(--single-space));
+}
+
+.contacts-wrapper-left {
+    height: calc(6 * var(--single-space));
+}
+
+.contacts-wrapper-right {
+    text-align: right;
+    padding-right: var(--single-space);
+    font-size: var(--font-size-s);
+}
+
+.mailto-link {
+    text-decoration: none;
+    color: var(--color-dark-blue);
+}
+
+.main-nav {
+    height: 50px;
+    width: 510px;
+    margin-left: 150px;
+    margin-top: -14px;
+    background-color: var(--color-dark-blue);
+    position: relative;
+    box-shadow: 5px 5px 5px grey;
+}
+
+.main-nav-list {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+}
+
+.main-nav-list-item {
+    display: inline;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.main-nav-list-link {
+    text-decoration: none;
+    color: var(--color-white);
+    font-size: var(--font-size-s);
+}
+
+.main-nav-list-link:hover {
+    border-bottom: 3px solid var(--color-white);
+}
+
+.image-hero-wrapper {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    padding-top: calc(4 * var(--single-space));
+    padding-bottom: calc(4 * var(--single-space));
+}
+
+.image-hero {
+    width: 100%;
+}
+
+.claim {
+    color: var(--color-white);
+    font-size: var(--font-size-xl);
+    font-family: 'Martel', serif;
+    font-weight: 700;
+    position: absolute;
+    bottom: calc(5 * var(--single-space));
+    left: calc(2 * var(--single-space));
+    opacity: 0.5;
+}
+
+.claim:hover {
+    opacity: 1;
+}
+
+.main-content-wrapper {
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'Raleway', sans-serif;
+}
+
+.welcome-wrapper {
+    padding-top: calc(2 * var(--single-space));
+    padding-bottom: calc(2 * var(--single-space));
+}
+
+.welcome-title-wrapper {
+    padding-right: calc(2 * var(--single-space));
+}
+
+.welcome-title {
+    font-size: var(--font-size-l);
+    font-weight: 700;
+    line-height: 1.5;
+    color: var(--color-dark-blue);
+}
+
+.welcome-text {
+    font-size: var(--font-size-s);
+    color: var(--color-dark-blue);
+}
+
+.image-doctor {
+    width: 100%;
+    padding-top: calc(4 * var(--single-space));
+}
+
+.photo-subtitle {
+    color: var(--color-dark-blue);
+    font-size: var(--font-size-xs);
+    font-weight: 700;
+}
+
+.row-info-boxes {
+    padding-top: calc(4 * var(--single-space));
+    padding-bottom: calc(4 * var(--single-space));
+}
+
+.col-info-box {
+    height: 510px;
+    padding: calc(5 * var(--single-space));
+    background-color: var(--color-light-blue);
+    color: var(--color-dark-blue);
+    box-shadow: 5px 5px 5px grey;
+}
+
+.col-info-box-left {
+    margin-right: 1%;
+}
+
+.col-info-box-right {
+    margin-left: 1%;
+}
+
+.box-title {
+    font-size: var(--font-size-m);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    background-color: var(--color-dark-blue);
+    color: var(--color-white);
+    padding: var(--single-space);
+}
+
+.box-content {
+    padding-top: calc(4 * var(--single-space));
+    padding-bottom: calc(4 * var(--single-space));
+    font-size: var(--font-size-s);
+}
+
+.box-list {
+    line-height: 2;
+    font-weight: 500;
+}
+
+.icon-wrapper {
+    padding-right: calc(3 * var(--single-space));
+}
+
+.fas {
+    font-size: var(--font-size-m);
+}
+
+.icon-phone-termin,
+.icon-at-termin {
+    color: var(--color-white);
+    background-color: var(--color-dark-blue);
+    padding: 8px;
+    border-radius: 50%;
+}
+
+.row-at {
+    padding-top: calc(2 * var(--single-space));
+}
+
+.box-subtitle-termin {
+    font-weight: 700;
+}
+
+.sommerferien-title,
+.verbindungen-title {
+    padding-top: calc(3 * var(--single-space));
+    padding-bottom: calc(2 * var(--single-space));
+    text-align: center;
+    font-size: var(--font-size-s);
+    font-weight: 700;
+}
+
+.sommerferien-info {
+    font-weight: 500;
+}
+
+.box-address {
+    color: var(--color-dark-blue);
+    text-align: center;
+}
+
+.connections-list-item {
+    line-height: 1.8;
+}
+
+.footer {
+    margin-top: calc(2 * var(--single-space));
+    padding-top: calc(4* var(--single-space));
+    padding-bottom: calc(4* var(--single-space));
+    background-color: var(--color-dark-blue);
+    color: var(--color-white);
+    text-align: center;
+}
+
+.footer-contact {
+    font-family: 'Raleway', sans-serif;
+    font-size: var(--font-size-xs);
+    letter-spacing: 1px;
+    line-height: 1.7;
+}
+
+.footer-mailto-link {
+    text-decoration: none;
+    color: var(--color-white);
+}
+
+
+/*
+*******************************************
+ CSS - Leistungen / Therapien / Impressum
+*********************************************
+*/
+
+.title-leistungen,
+.title-therapien,
+.title-impressum,
+.title-datenschutz {
+    padding-top: calc(4 * var(--single-space));
+    padding-bottom: calc(4 * var(--single-space));
+    font-size: var(--font-size-l);
+    font-weight: 700;
+    line-height: 1.5;
+    color: var(--color-dark-blue);
+}
+
+.image-leistungen,
+.image-therapien {
+    width: 100%;
+    padding-right: calc(2 * var(--single-space));
+}
+
+.leistungen-list-container,
+.therapien-list-container {
+    color: var(--color-dark-blue);
+    padding-top: calc(4 * var(--single-space));
+    padding-bottom: calc(4 * var(--single-space));
+}
+
+.leistung-subtitle,
+.therapie-subtitle {
+    font-size: var(--font-size-s);
+    font-weight: 700;
+    line-height: 1.45;
+}
+
+.leistungen-list-item,
+.therapien-list-item {
+    padding-top: var(--single-space);
+    padding-bottom: var(--single-space);
+}
+
+.therapien-list-item:hover,
+.leistungen-list-item:hover {
+    background-color: var(--color-white);
+}
+
+.therapie-description-list,
+.leistung-description-list {
+    line-height: 1.45;
+}
+
+.therapie-description-link {
+    text-decoration: none;
+    color: var(--color-dark-blue);
+    font-weight: 500;
+}
+
+.main-content-wrapper-impressum {
+    width: 60%;
+    font-family: 'Raleway', sans-serif;
+}
+
+.impressum-subtitle,
+.datenschutz-subtitle {
+    font-size: var(--font-size-m);
+    font-weight: 700;
+    padding-top: calc(2 * var(--single-space));
+    padding-bottom: var(--single-space);
+    color: var(--color-dark-blue);
+}
+
+.impressum-subtitle-small {
+    font-size: var(--font-size-s);
+    font-weight: 700;
+    padding-top: calc(2 * var(--single-space));
+    padding-bottom: calc(2 * var(--single-space));
+    color: var(--color-dark-blue);
+}
+
+.impressum-dr-name,
+.datenschutz-dr-name {
+    padding-top: calc(2 * var(--single-space));
+    padding-bottom: calc(2 * var(--single-space));
+}
+
+.impressum-content,
+.datenschutz-content,
+.leistungen-intro-text {
+    color: var(--color-dark-blue);
+    line-height: 1.6;
+}
+
+.leistungen-intro-text {
+    padding-bottom: calc(2 * var(--single-space));
+}
+
+.impressum-link {
+    text-decoration: none;
+    color: var(--color-dark-blue);
+    font-weight: 500;
+}
+
+.datenschutz-content-link {
+    text-decoration: none;
+    color: var(--color-dark-blue);
+    font-weight: 500;
+    font-size: var(--font-size-xs);
+}
+
+.datenschutz-content-link-wrapper {
+    padding-top: calc(2 * var(--single-space));
+}
+
+/*
+*******************************************
+ GRID
+*********************************************
+*/
+
+.row {
+    width: 100%;
+    position: relative;
+}
+
+.row:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.col {
+    float: left;
+    position: relative;
+}
+
+.col-1-12 {
+    width: 8.3333%;
+    float:left;
+}
+
+.col-2-12 {
+    width: 16.6666%;
+    float: left;
+}
+
+.col-3-12 {
+    width: 24.99%;
+    float: left;
+}
+
+.col-4-12 {
+    width: 33.3333%;
+    float: left;
+}
+
+.col-5-12 {
+    width: 41.6666%;
+    float: left;
+}
+
+.col-6-12 {
+    width: 49%;
+    float: left;
+}
+
+.col-7-12 {
+    width: 58.3328%;
+    float: left;
+}
+
+.col-8-12 {
+    width: 66.6666%;
+    float: left;
+}
+
+.col-9-12 {
+    width: 74.9994%;
+    float: left;
+}
+
+.col-10-12 {
+    width: 83.3327%;
+    float: left;
+}
+
+.col-11-12 {
+    width: 91.666%;
+    float: left;
+}
+
+.col-12-12 {
+    width: 100%;
+    float: left;
+}
+
+/*
+*******************************************
+ BREAKPOINTS
+*********************************************
+*/
+
+
+@media (max-width: 1280px) {
+    
+    .page-wrapper {
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    .name {
+        margin-left: var(--single-space);
+    }
+    
+    .claim {
+        font-size: var(--font-size-l);
+    }
+}
+
+@media (max-width: 750px) {
+    
+    .logo-contacts-wrapper {
+        padding-top: var(--single-space);
+        padding-bottom: var(--single-space);
+    }
+    
+    .contacts-wrapper-left {
+        height: calc(5 * var(--single-space));
+    }
+    
+    .contacts-wrapper-right {
+        font-size: var(--font-size-xs);
+    }
+    
+    .main-nav {
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    .claim {
+        font-size: var(--font-size-m);
+        opacity: 1;
+    }
+    
+    .welcome-title {
+        font-size: var(--font-size-m);
+        line-height: 1.45;
+    }
+    
+    .dr-image-wrapper {
+        padding-bottom: calc(4 * var(--single-space));
+    }
+    
+    .row-info-boxes {
+        padding-top: var(--single-space);
+        padding-bottom: var(--single-space);
+    }
+
+    .col-5-12,
+    .col-6-12,
+    .col-7-12 {
+        width: 100%;
+    }
+    
+    .col-info-box {
+        margin-bottom: var(--single-space);
+        width: 100%;
+    }
+
+    .col-info-box-left {
+        margin-right: 0;
+    }
+
+    .col-info-box-right {
+        margin-left: 0;
+    }
+
+}
+
+
+
+
